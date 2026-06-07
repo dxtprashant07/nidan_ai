@@ -41,7 +41,11 @@ The Space uses:
 - `Dockerfile`
 - `backend/main.py`
 - `backend/inference.py`
-- the `.keras` model files tracked with Git LFS
+- the `.keras` model files downloaded from GitHub LFS during the Docker build
+
+The model files are intentionally not stored in the Space repository because the
+Space Git repository has a 1 GB storage limit and the three weights are about
+1.6 GB total.
 
 Set this runtime variable in the Space settings after the Vercel deployment is live:
 

@@ -14,8 +14,11 @@ COPY --chown=user backend/requirements.txt backend/requirements.txt
 RUN pip install --no-cache-dir --upgrade pip && \
     pip install --no-cache-dir -r backend/requirements.txt
 
+ADD --chown=user https://media.githubusercontent.com/media/dxtprashant07/nidan_ai/main/best_retina_vessel_segmentation_model.keras ./best_retina_vessel_segmentation_model.keras
+ADD --chown=user https://media.githubusercontent.com/media/dxtprashant07/nidan_ai/main/new_best_brain_tumor_model.keras ./new_best_brain_tumor_model.keras
+ADD --chown=user https://media.githubusercontent.com/media/dxtprashant07/nidan_ai/main/retina_vessel_segmentation_final_latest.keras ./retina_vessel_segmentation_final_latest.keras
+
 COPY --chown=user backend backend
-COPY --chown=user *.keras ./
 
 USER user
 

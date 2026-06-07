@@ -21,6 +21,7 @@ build/
 !frontend/.env.production
 
 # Local large binary artifacts
+*.keras
 *.h5
 *.pt
 *.pth
