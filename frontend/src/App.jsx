@@ -4,7 +4,7 @@ import Header from './components/Header'
 import UploadPanel from './components/UploadPanel'
 import ResultsPanel from './components/ResultsPanel'
 
-const API = '/api'
+const API = (import.meta.env.VITE_API_URL || '/api').replace(/\/$/, '')
 
 export default function App() {
   const [models, setModels] = useState([])

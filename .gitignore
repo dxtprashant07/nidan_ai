@@ -16,6 +16,8 @@ build/
 # Environment files
 .env
 .env.*
+!.env.example
+!**/.env.example
 
 # Local large binary artifacts
 *.h5

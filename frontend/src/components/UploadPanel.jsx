@@ -1,10 +1,16 @@
-import { useCallback, useState } from 'react'
+import { useCallback, useEffect, useState } from 'react'
 import { useDropzone } from 'react-dropzone'
 
 export default function UploadPanel({ models, onSubmit, isLoading }) {
   const [file, setFile] = useState(null)
   const [preview, setPreview] = useState(null)
   const [modelId, setModelId] = useState(models[0]?.id ?? '')
+
+  useEffect(() => {
+    if (!modelId && models.length > 0) {
+      setModelId(models[0].id)
+    }
+  }, [modelId, models])
 
   const onDrop = useCallback((accepted) => {
     const f = accepted[0]
