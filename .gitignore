@@ -17,8 +17,7 @@ build/
 .env
 .env.*
 
-# Local model weights and large binary artifacts
-*.keras
+# Local large binary artifacts
 *.h5
 *.pt
 *.pth
