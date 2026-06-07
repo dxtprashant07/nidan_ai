@@ -18,11 +18,23 @@ Deploy the `frontend` directory as a Vercel project.
 - Root directory: `frontend`
 - Build command: `npm run build`
 - Output directory: `dist`
-- Environment variable: `VITE_API_URL=https://YOUR_USERNAME-nidan-ai.hf.space`
+- Environment variable: `VITE_API_URL=https://prshntdxt-nidan-ai.hf.space`
 
 ## Backend: Hugging Face Spaces
 
 Create a Hugging Face Space with Docker SDK and push this repository to the Space.
+
+Backend Space repo:
+
+```text
+https://huggingface.co/spaces/prshntdxt/nidan_ai
+```
+
+Backend API URL:
+
+```text
+https://prshntdxt-nidan-ai.hf.space
+```
 
 The Space uses:
 
